@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 2.5em;
+}
+
+div#root {
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #293264;
+    background-color: #F5F7FB;
+    background-image: url(images/blob1.png), url(images/blob2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main.start-main {
+    background-position: right -460px, left 480px;
+}
+
+main.quiz-main {
+    align-items: flex-start;
+    padding: 2.5em 4.68em;
+    background-position: right -530px, left 580px;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Karla", sans-serif;
+    margin: 1em 0 0.29em;
+}
+
+.desc {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 1.81em;
+}
+
+section.question {
+    width: 100%;
+    padding-bottom: 0.93em;
+    margin-bottom: 0.93em;
+    border-bottom: 0.79px solid #DBDEF0;
+}
+
+section.question > h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Karla", sans-serif;
+    margin: 0 0 0.75em;
+}
+
+section.options {
+    display: flex;
+    gap: 0.375em 0.75em;
+    flex-wrap: wrap;
+}
+
+section.options > button.option {
+    height: 20px;
+    color: #293264;
+    background-color: unset;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 0.64rem;
+    padding: 0 1.4em;
+    border: 0.79px solid #4D5B9E;
+    border-radius: 7.94px;
+    cursor: pointer;
+}
+
+section.options > button.selected { 
+    background-color: #D6DBF5;
+    border: 0.79px solid #D6DBF5;
+}
+
+section.options > button.unselected { 
+    background-color: unset;
+    color: darkgrey;
+    border: 0.79px solid darkgray;
+}
+
+section.options > button.correctoption { 
+    color: #293264;
+    background-color: #94D7A2;
+    border: 0.79px solid #94D7A2;
+}
+
+section.options > button.wrong { 
+    color: darkgrey;
+    background-color: #F8BCBC;
+    border: 0.79px solid #F8BCBC;
+}
+
+.score {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    text-align: center;
+    color: #293264;
+    margin-top: 1em;
+    margin-left: 1.43em;
+}
+
+.btn {
+    align-self: center;
+    height: 3.25em;
+    width: 12em;
+    background-color: #4D5B9E;
+    border-radius: 15px;
+    color: #F5F7FB;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.checkBtn {
+    width: 11.71em;
+    height: 3.41em;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.64em;
+    margin-block-start: 1.25em;
+}
+
+div.play-again {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+button.playagainBtn {
+    width: 10.15em;
+    height: 2.92em;
+    border-radius: 10px;
+    color: #F5F7FB;
+    font-weight: 600;
+    font-size: 0.64em;
+    font-family: "Inter", sans-serif;
+    background-color: #4D5B9E;
+    margin-block: 1.25em 0;
+}
